@@ -1,1 +1,1 @@
-Repo with my CV history
+Repository with my CV history
