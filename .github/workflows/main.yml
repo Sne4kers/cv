@@ -19,10 +19,10 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: cv-full.tex
+          root_file: cvFullYehorKozyr.tex
       - uses: ncipollo/release-action@v1
         with:
           tag: ${{ steps.generate_release_tag.outputs.next_release_tag }}
-          artifacts: "cv-full.pdf"
+          artifacts: "cvFullYehorKozyr.pdf"
           generateReleaseNotes: true
           makeLatest: true
