@@ -18,7 +18,9 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
-      - name: Release
-        uses: softprops/action-gh-release@v1
+      - uses: ncipollo/release-action@v1
         with:
-          files: main.pdf
+          tag: ${{ steps.generate_release_tag.outputs.next_release_tag }}
+          artifacts: "main.pdf"
+          generateReleaseNotes: true
+          makeLatest: true
