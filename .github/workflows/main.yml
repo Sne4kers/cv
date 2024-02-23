@@ -1,8 +1,6 @@
 name: Publish Release
-on:
-  push:
-    tags:
-      - '*'
+on: push
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,4 +11,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
       with:
-        title: MyReleaseMessage
+        title: Release
