@@ -1,0 +1,149 @@
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,21pt]{article}
+
+\usepackage[ukrainian]{babel}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\hypersetup{colorlinks=true,urlcolor=black}
+
+\usepackage{geometry}
+
+
+\iffalse
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-1in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1in}
+\fi
+\geometry{a4paper, left=1cm, right=1cm, top=0.5cm, bottom=1cm, includehead, includefoot}
+
+\setlength{\footskip}{12pt}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[C]{\thepage}
+
+
+\urlstyle{rm}
+
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\renewcommand{\labelitemii}{$\circ$}
+\renewcommand\thefootnote{\textcolor{black}{\textbf{\arabic{footnote}}}}
+\input{commands}
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center} \textbf{\LARGE{Yehor Kozyr}} \end{center}
+\vspace{-12pt}
+\begin{center}
+\href{https://www.linkedin.com/in/yehor-kozyr/}{linkedin.com/in/yehor-kozyr} $\vert$ +31687852493 $\vert$ \href{mailto:yehor.kozyr@gmail.com}{yehor.kozyr@gmail.com} $\vert$ \href{https://github.com/Sne4kers}{github.com/Sne4kers} \end{center}
+
+%\vspace{-15pt}  
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \input{education/tudelft_education}
+    \input{education/knsl_education}
+\resumeSubHeadingListEnd
+
+\vspace{-10pt}
+\section{Research Projects}
+\resumeSubHeadingListStart
+    \input{research/uav_research}
+    \input{research/stn_research}
+\resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------------
+\vspace{-8pt}
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \input{work/avonic}
+    \input{work/ciselab}
+  \resumeSubHeadingListEnd
+\vspace{-6pt}
+\section{Projects}
+\resumeSubHeadingListStart
+  \input{projects/cg_raytracing}
+  \input{projects/backend_pizza}
+\resumeSubHeadingListEnd
+
+\vspace{-5pt}
+\section{Publications}
+\input{publication/random_walk}
+
+\vspace{-5pt}
+\section{Honors and Awards}
+\begin{description}[font=$\bullet$]
+\item {Participant at the National Junior Academy of Sciences Competition (Math) - 2020}
+\vspace{-5pt}
+\item {1st place at the Kyiv Junior Academy of Sciences Competition (Math) - 2020}
+\vspace{-5pt}
+\item {2nd place at the Kyiv Olympiad in Informatics - 2019}
+\vspace{-5pt}
+\item {2nd place at the Kyiv Olympiad in Mathematics, participant of Qualifications for National stage - 2019}
+\vspace{-5pt}
+\item {3rd place at the Second Stage of 2019 All-Ukrainian Collegiate Programming Contest - 2019}
+\vspace{-5pt}
+\item {3rd place at the Computer Experiment Team Olympiad - 2019}
+\vspace{-5pt}
+\item {1st place at the Kyiv Olympiad in Physics, participant of Qualifications for National stage - 2019}
+\end{description}
+
+
+\vspace{-5pt}
+\section{Skills Summary}
+  \resumeSubHeadingListStart
+    \resumeSectionType{Programming Languages}{C++, Java, Python, Scala, TypeScript, SQL}
+    \resumeSectionType{Tools}{GIT, PostgreSQL, Jupyter Notebooks, \LaTeX}
+    \resumeSectionType{Platforms}{Linux, Web, Windows, Arduino, AWS, Raspberry PI}
+    \resumeSectionType{Soft Skills}{Collaboration, Leadership, Event Management, Public Speaking}
+    \resumeSectionType{Languages}{English - Fluent, Ukrainian - Native}
+  \resumeSubHeadingListEnd
+
+\vspace{-6pt}
+\section{Extracurricular Activities}
+  \resumeSubHeadingListStart
+	\nonBulletResumeSubheading
+    {Mathematics Teacher at Kvanta Math courses}{Kyiv, Ukraine}
+    {Explained topics, helped students during classes, and graded their homework.}{September 2019 - June 2021}
+    % \vspace{10pt}\textbf{\large{Community Experience}}
+  \nonBulletResumeSubheading
+    {Member of the School Student Council}{Kyiv, Ukraine}
+    {Participated at every stage of organizing extracurricular activities for students.}{September 2018 - May 2021}
+
+\resumeSubHeadingListEnd
+
+\end{document}

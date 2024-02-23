@@ -14,13 +14,15 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           tag_prefix: 'v'
           tag_template: 'yyyy.mm.dd.i'
+      - name: Install cyrillic package
+        run: sudo apt-get install -y texlive-lang-cyrillic
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: main.tex
+          root_file: cv-full.tex
       - uses: ncipollo/release-action@v1
         with:
           tag: ${{ steps.generate_release_tag.outputs.next_release_tag }}
-          artifacts: "main.pdf"
+          artifacts: "cv-full.pdf"
           generateReleaseNotes: true
           makeLatest: true

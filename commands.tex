@@ -1,0 +1,66 @@
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\nonBulletItem}[2]{
+  \item[]\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\normalsize{ \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      #3 & #4 \\
+    \end{tabular*}}
+    \vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingLess}[3]{
+  \vspace{-1pt}\item\normalsize
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}
+    \vspace{0pt}
+    \small{\newline #3}
+    \vspace{-4pt}
+}
+
+\newcommand{\nonBulletResumeSubheading}[4]{
+  \vspace{-1pt}\normalsize{ \item[]
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      #3 & #4 \\
+    \end{tabular*}}
+    \vspace{-5pt}
+}
+
+\newcommand{\subItemOfItem}[1]{
+    \item\small {#1}\vspace{-2pt}
+}
+
+\newcommand{\resumeSectionType}[2]{
+  \item\begin{tabular*}{0.96\textwidth}[t]{
+    p{0.3\linewidth}p{0.7\linewidth}
+  }
+    \textbf{#1} & #2
+  \end{tabular*}\vspace{-6pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+\newcommand{\nonBulletResumeSubItem}[2]{\nonBulletItem{#1}{#2}\vspace{-3pt}}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
