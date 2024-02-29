@@ -18,7 +18,7 @@
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\normalsize{ \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.99\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       #3 & #4 \\
     \end{tabular*}}
@@ -27,7 +27,7 @@
 
 \newcommand{\resumeSubheadingLess}[3]{
   \vspace{-1pt}\item\normalsize
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.99\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
     \end{tabular*}
     \vspace{0pt}
@@ -35,14 +35,31 @@
     \vspace{-4pt}
 }
 
+\newcommand{\nonBulletResumeSubheadingLess}[2]{
+  \vspace{-1pt}\normalsize{ \item[]
+    \begin{tabular*}{0.99\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}}
+    \vspace{-4pt}
+}
+
 \newcommand{\nonBulletResumeSubheading}[4]{
   \vspace{-1pt}\normalsize{ \item[]
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.99\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       #3 & #4 \\
     \end{tabular*}}
     \vspace{-5pt}
 }
+
+\newcommand{\nonBulletResumeSubheadingNoVSpace}[4]{
+  \vspace{-1pt}\normalsize{ \item[]
+    \begin{tabular*}{0.99\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      #3 & #4 \\
+    \end{tabular*}}
+}
+
 
 \newcommand{\subItemOfItem}[1]{
     \item\small {#1}\vspace{-2pt}
