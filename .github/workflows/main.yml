@@ -15,7 +15,9 @@ jobs:
           tag_prefix: 'v'
           tag_template: 'yyyy.mm.dd.i'
       - name: Install cyrillic package
-        run: sudo apt-get install -y texlive-lang-cyrillic
+        run: |
+        sudo apt-get update
+        sudo apt-get install -y texlive-lang-cyrillic
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
